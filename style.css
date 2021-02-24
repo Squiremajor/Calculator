@@ -1,0 +1,62 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc {
+    border: 3px solid black;
+    border-radius: 5px;
+    max-width: 30%;
+    min-width: 25%;
+    margin: 50px auto;
+    height: 80%;
+}
+
+.window {
+    padding: 40px;
+    border: 1px solid black;
+    width: 80%;
+    text-align: right;
+    margin: 10px auto;
+}
+
+.clr {
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: ". clear delete .";
+}
+
+#clear {
+    grid-area: clear;
+    width: auto;
+    margin: auto;
+}
+
+#delete {
+    grid-area: delete;
+    width: auto;
+    margin: auto;
+}
+
+button {
+    padding: 20px;
+    font-size: 24pt;
+    height: 120px;
+    width: 120px;
+    margin: auto;
+}
+
+.buttons {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border-top: 2px solid black;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    /* max-width: 40%;
+    min-width: 25%; */
+    margin: 0 auto 0 auto;
+}
